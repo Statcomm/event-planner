@@ -8,6 +8,6 @@ router.get("/", getEvent)
 router.post("/", createEvent)
 router.delete("/:eventId", deleteEvent)
 router.put("/:eventId", updateEvent)
-router.get("/:eventId", searchEvent)
+router.get("/:eventName", searchEvent)
 
 module.exports = router

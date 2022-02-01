@@ -12,7 +12,7 @@ exports.getEvent = async (req,res)=>{
 
  exports.createEvent = async (req,res) => {
     try { 
-    const newEvent = await Event.create(req.body)
+    const newEvent = await Event.create( req.body)
           res.status(201).json(newEvent)
     }  catch (error) {
         res.status(500).json({message:error.message})
